@@ -16,11 +16,6 @@ jobs:
         if: github.event_name == 'pull_request' || github.event_name == 'release' || (github.event_name == 'push' && github.ref == 'refs/heads/master') || github.repository != 'OrfeasZ/ZHMModSDK'
 
         steps:
-            -   name: Get latest CMake and ninja
-                uses: lukka/get-cmake@latest
-                with:
-                    useCloudCache: false
-
             -   name: Checkout
                 uses: actions/checkout@v4
                 with:
