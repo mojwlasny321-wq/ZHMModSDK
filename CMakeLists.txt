@@ -42,7 +42,6 @@ add_subdirectory(DirectInputProxy)
 # Mods.
 set(MODS
         NoPause
-        FocusForAll
         BetterInstinct
 )
 foreach (MOD IN LISTS MODS)
