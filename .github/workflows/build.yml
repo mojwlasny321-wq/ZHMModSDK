@@ -18,6 +18,8 @@ jobs:
         steps:
             -   name: Get latest CMake and ninja
                 uses: lukka/get-cmake@latest
+                with:
+                    useCloudCache: false
 
             -   name: Checkout
                 uses: actions/checkout@v4
